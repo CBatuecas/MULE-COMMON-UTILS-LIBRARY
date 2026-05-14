@@ -1,0 +1,107 @@
+# ===========================
+# MuleSoft / Anypoint Studio
+# ===========================
+
+# Carpetas de build y target
+target/
+.target/
+
+# Metadatos de Anypoint Studio (Eclipse-based)
+.classpath
+.project
+.settings/
+.factorypath
+
+# Carpeta de Studio con configuraciones locales
+.mule/
+.studio/
+
+# Archivos de repositorio local de Mule
+repository/
+
+# Logs
+logs/
+*.log
+
+# Archivos de exportación de Studio
+*.jar
+*.zip
+
+# Archivos temporales de Studio
+*.tmp
+*.bak
+*.swp
+
+# ===========================
+# Maven
+# ===========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# Credenciales y configuración sensible
+# ===========================
+
+# Propiedades con credenciales (nunca subir al repo)
+src/main/resources/*credentials*.properties
+src/main/resources/*secret*.properties
+src/main/resources/*password*.properties
+src/main/resources/local.properties
+
+# Archivos de propiedades de entornos locales
+*.local.properties
+local-*.properties
+
+# ===========================
+# IDE genérico
+# ===========================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# Eclipse
+*.launch
+.metadata/
+
+# ===========================
+# Sistema Operativo
+# ===========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ===========================
+# MUnit (Tests)
+# ===========================
+# Los reportes de test no se suelen versionar
+target/site/
+target/surefire-reports/
+target/munit-reports/
