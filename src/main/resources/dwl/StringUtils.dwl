@@ -14,11 +14,11 @@
  *   sanitizeString("  Hola MUNDO!! ", {trimSpaces: true, toLowerCase: true})
  *   // → "hola mundo!!"
  */
-fun sanitizeString(text: String, options: Object) : String = do {
+fun sanitizeString(text: String, options: Object) = do {
     var transformations = [
         {apply: options["trimSpaces"]         default false, fn: (t) -> trim(t)},
         {apply: options["removeSpecialChars"] default false, fn: (t) -> replace(t, /[^a-zA-Z0-9\s]/, "")},
-        {apply: options["toLowerCase"] default false, fn: (t) -> lower(t)
+        {apply: options["toLowerCase"] default false, fn: (t) -> lower(t)}
       
     ]
     ---
